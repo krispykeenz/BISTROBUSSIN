@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{710DA768-682F-4A5F-B2ED-87D3A077AFBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Group_Project_Bistro_Bus</RootNamespace>
+    <AssemblyName>Group_Project_Bistro_Bus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBookingsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBookingsFrm.Designer.cs">
+      <DependentUpon>AddBookingsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClientsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClientsFrm.Designer.cs">
+      <DependentUpon>AddClientsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployeesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployeesFrm.Designer.cs">
+      <DependentUpon>AddEmployeesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMenuItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMenuItemFrm.Designer.cs">
+      <DependentUpon>AddMenuItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppInterface_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppInterface_Frm.Designer.cs">
+      <DependentUpon>AppInterface_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bistro_BusDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bistro_BusDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookingsReportsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingsReportsFrm.Designer.cs">
+      <DependentUpon>BookingsReportsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsReportsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsReportsFrm.Designer.cs">
+      <DependentUpon>ClientsReportsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBookingsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBookingsFrm.Designer.cs">
+      <DependentUpon>EditBookingsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClientsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClientsFrm.Designer.cs">
+      <DependentUpon>EditClientsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditEmployeesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditEmployeesFrm.Designer.cs">
+      <DependentUpon>EditEmployeesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMenuItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMenuItemFrm.Designer.cs">
+      <DependentUpon>EditMenuItemFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpReportsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpReportsFrm.Designer.cs">
+      <DependentUpon>EmpReportsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Frm.Designer.cs">
+      <DependentUpon>Login_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReportsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReportsFrm.Designer.cs">
+      <DependentUpon>MenuReportsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveEmployeesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveEmployeesFrm.Designer.cs">
+      <DependentUpon>RemoveEmployeesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookingsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBookingsFrm.Designer.cs">
+      <DependentUpon>ViewBookingsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClientsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewClientsFrm.Designer.cs">
+      <DependentUpon>ViewClientsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeesFrm.Designer.cs">
+      <DependentUpon>ViewEmployeesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMenuItemFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewMenuItemFrm.Designer.cs">
+      <DependentUpon>ViewMenuItemFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBookingsFrm.resx">
+      <DependentUpon>AddBookingsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClientsFrm.resx">
+      <DependentUpon>AddClientsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployeesFrm.resx">
+      <DependentUpon>AddEmployeesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMenuItemFrm.resx">
+      <DependentUpon>AddMenuItemFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppInterface_Frm.resx">
+      <DependentUpon>AppInterface_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingsReportsFrm.resx">
+      <DependentUpon>BookingsReportsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsReportsFrm.resx">
+      <DependentUpon>ClientsReportsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBookingsFrm.resx">
+      <DependentUpon>EditBookingsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClientsFrm.resx">
+      <DependentUpon>EditClientsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditEmployeesFrm.resx">
+      <DependentUpon>EditEmployeesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMenuItemFrm.resx">
+      <DependentUpon>EditMenuItemFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpReportsFrm.resx">
+      <DependentUpon>EmpReportsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Frm.resx">
+      <DependentUpon>Login_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReportsFrm.resx">
+      <DependentUpon>MenuReportsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RemoveEmployeesFrm.resx">
+      <DependentUpon>RemoveEmployeesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBookingsFrm.resx">
+      <DependentUpon>ViewBookingsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewClientsFrm.resx">
+      <DependentUpon>ViewClientsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeesFrm.resx">
+      <DependentUpon>ViewEmployeesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewMenuItemFrm.resx">
+      <DependentUpon>ViewMenuItemFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Bistro_BusDBDataSet.xsc">
+      <DependentUpon>Bistro_BusDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bistro_BusDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bistro_BusDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bistro_BusDBDataSet.xss">
+      <DependentUpon>Bistro_BusDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bistro_BusDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bistro_BusDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Bistro_BusDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Bookings Background.jpg" />
+    <None Include="Clients Background.jpg" />
+    <None Include="Menu Items Background.jpg" />
+    <None Include="Main Menu Background.jpg" />
+    <None Include="EmployeeView Background.jpg" />
+    <None Include="LogIn Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{710DA768-682F-4A5F-B2ED-87D3A077AFBB}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Group__Project__Bistro__Bus PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AddMenuItemFrm.Designer.cs">
+    <Files>
+      <File FileName="AddMenuItemFrm.Designer.cs" Line="33" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Group_Project_Bistro_Bus">
+            <Node name="Group_Project_Bistro_Bus" expanded="True">
+              <Node name="AddMenuItemFrm.cs" expanded="True">
+                <Node name="AddMenuItemFrm.Designer.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
